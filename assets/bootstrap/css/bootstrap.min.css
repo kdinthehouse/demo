@@ -14767,132 +14767,56 @@ body {
 
 
 
-.testimonials {
-	background-color: #f33f02;
-	position: relative;
-	padding-top: 80px;
-}
-.testimonials:after {
-	content: '';
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	width: 100%;
-	height: 30%;
-	background-color: #ddd;
-}
-#customers-testimonials .item-details {
-	background-color: #333;
-	color: #fff;
-	padding: 20px 10px;
-	text-align: left;
-}
-#customers-testimonials .item-details h5 {
-	margin: 0 0 15px;
-	font-size: 18px;
-	line-height: 18px;
-}
-#customers-testimonials .item-details h5 span {
-	color: red;
-	float: right;
-	padding-right: 20px;
-}
-#customers-testimonials .item-details p {
-	font-size: 14px;
-}
-#customers-testimonials .item {
-	text-align: center;
-	margin-bottom: 80px;
-}
-.owl-carousel .owl-nav [class*='owl-'] {
-	-webkit-transition: all 0.3s ease;
-	transition: all 0.3s ease;
-}
-.owl-carousel .owl-nav [class*='owl-'].disabled:hover {
-	background-color: #d6d6d6;
-}
-.owl-carousel {
-	position: relative;
-}
-.owl-carousel .owl-next, .owl-carousel .owl-prev {
-	width: 50px;
-	height: 50px;
-	line-height: 50px;
-	border-radius: 50%;
-	position: absolute;
-	top: 30%;
-	font-size: 20px;
-	color: #fff;
-	border: 1px solid #ddd;
-	text-align: center;
-}
-.owl-carousel .owl-prev {
-	left: -70px;
-}
-.owl-carousel .owl-next {
-	right: -70px;
-}
-
 .shadow-effect {
-    padding: 20; /* Remove padding */
-    background: transparent; /* Make background transparent */
-    border-radius: 10px; /* Match the border-radius of the image */
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    position: relative; /* Ensure the container is positioned relative for absolute positioning of children */
+    background: #fff; /* Ensure background color is white */
+    border-radius: 10px; /* Add rounded corners */
     text-align: center;
-    position: relative;
     overflow: hidden;
-    width: 50%; /* Decrease width */
-    height: 500px; /* Increase height */
-    margin: 0 auto; /* Center the item */
-    border: 2px solid; /* Decrease border size */
-    border-image: linear-gradient(to right, #00f, #5d5eff) 1; /* Add linear gradient to border */
-border-radius: 10px; /* Adjust the value as needed to make the edges rounded */
+    height: auto; /* Increase the height as needed */
 }
 
-.shadow-effect img {
+.shadow-effect img.img-responsive {
     width: 100%;
     height: auto;
-    border-radius: 10px; /* Match the border-radius of the container */
-    position: relative;
-    top: -20px; /* Move image 20px to the top */
+
+}
+
+.overlay-image {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -25%); /* Center the image horizontally and adjust vertically */
+    width: 100%;
+    height: auto;
+
+    z-index: 1; /* Ensure the overlay image is above the background image */
 }
 
 .item-details {
     padding: 20px;
-    background: linear-gradient(to top, black, transparent);
-    color: white;
-    position: absolute;
-    bottom: 0;
+    color: white; /* Change text color to white */
+    position: relative;
+    bottom: 0; /* Position the text at the bottom */
     left: 0;
     right: 0;
-
+    z-index: 2; /* Ensure the text is above the overlay image */
+    background:black;
+    text-align: center;
 }
 
-.btn {
-    margin-top: 20px; /* Add margin to ensure button is not too close to other elements */
-}
-
-.learn-more {
+.explore-btn {
     position: absolute;
-    bottom: 20px; /* Adjust as needed */
-    right: 20px; /* Adjust as needed */
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: white; /* Ensure the text color is white */
-    border: 2px solid white; /* Add a border */
-    padding: 5px 10px; /* Add padding for better spacing */
+    bottom: 20px; /* Position the button at the bottom */
+    left: 50%;
+    transform: translateX(-50%); /* Center the button horizontally */
+    z-index: 3; /* Ensure the button is above other elements */
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    border: 2px solid #fff; /* White border */
+    padding: 10px 20px; /* Add padding for better spacing */
     border-radius: 5px; /* Optional: Add rounded corners */
+    color: black; /* Change text color to black */
 }
-
-.learn-more-icon {
-    width: 16px; /* Adjust the width as needed */
-    height: 16px; /* Adjust the height as needed */
-    margin-left: 8px; /* Space between text and image */
-}
-
-
 
 
 
