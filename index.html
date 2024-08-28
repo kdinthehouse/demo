@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="assets/css/Lato.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="assets/css/pikaday.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+
     <style>
 
 .btnn-unclickable {
@@ -63,7 +65,10 @@
     margin: 0;
 }
 
-
+.small-button {
+    font-size: 12px; /* Reduce text size */
+    padding: 5px 10px; /* Adjust padding to make the button smaller */
+}
 
 
     .gradient-text {
@@ -114,6 +119,20 @@ a.d-flex.align-items-center.text-decoration-none {
     .navbar-nav .nav-link:hover {
         color: white; /* Hover color */
     }
+
+
+    .badge:after{
+        content:attr(value);
+        font-size:12px;
+        color: #fff;
+        background: red;
+        border-radius:50%;
+        padding: 0 5px;
+        position:relative;
+        left:-8px;
+        top:-10px;
+        opacity:0.9;
+    }
 </style>
     </style>
 </head>
@@ -132,12 +151,13 @@ a.d-flex.align-items-center.text-decoration-none {
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item"><a class="nav-lin nav-lin-ltr nav-link active" href="index.html" style="color: white;">Home</a></li>
+                    <li class="nav-item"><a class="nav-lin nav-lin-ltr nav-link" href="aboutus.html" style="color: white;">About Us</a></li>
                     <li class="nav-item"><a class="nav-lin nav-lin-ltr nav-link" href="services.html" style="color: white;">Services</a></li>
                     <li class="nav-item"><a class="nav-lin nav-lin-ltr nav-link" href="pricing.html" style="color: white;">Pricing</a></li>
                     <li class="nav-item"><a class="nav-lin nav-lin-ltr nav-link" href="resources.html" style="color: white;">Resources</a></li>
-                    <li class="nav-item"><a class="nav-lin nav-lin-ltr nav-link" href="aboutus.html" style="color: white;">About Us</a></li>
                     <li class="nav-item"><a class="nav-lin nav-lin-ltr nav-link" href="contacts.html" style="color: white;">Contacts</a></li>
                 </ul>
+                
                 <a href="login.html">
                     <img src="./assets/img/IMG_7053.PNG" class="rounded" alt="Login / Sign up" style="width: 100px; height: auto;">
                 </a>
@@ -181,7 +201,7 @@ a.d-flex.align-items-center.text-decoration-none {
             <!-- Start: portfolio heading -->
             <div class="row gy-4 gy-md-0 heading">
                 <div class="col-md-8 col-xl-6 text-left">
-                    <button class="btn btn-primary shadow fw-bold text-success mb-2 text-start font-weight-bold btnn btnn-unclickable">Services</button>
+                    <button class="btn btn-primary shadow fw-bold text-success mb-2 text-start font-weight-bold btnn btnn-unclickable small-button">Services</button>
                     <p>
                         <span style="font-size: 60px;" class="helvvbold">What do we<span style="font-size: 60px;" class=" helvvbold gradient-textt"> Offer ?</span>
                     </p><br>
@@ -349,7 +369,8 @@ a.d-flex.align-items-center.text-decoration-none {
             <!-- Start: portfolio heading -->
             <div class="row gy-4 gy-md-0 heading">
                 <div class="col-md-8 col-xl-6 text-left">
-                    <button class="btn btn-primary shadow fw-bold text-success mb-2 text-start font-weight-bold btnn btnn-unclickable">Responsibilities</button>
+
+                    <button class="btn btn-primary shadow fw-bold text-success mb-2 text-start font-weight-bold btnn btnn-unclickable small-button">Responsibilities</button>
                     <p>
                         <span style="font-size: 60px;" class="helvvbold">Why<span style="font-size: 60px;" class=" helvvbold gradient-textt"> Us</span>?</span>
                     </p><br>
@@ -443,6 +464,54 @@ a.d-flex.align-items-center.text-decoration-none {
         </div>
     </section>
 
+    <section class="bg-black">
+        <div class="container bg-black">
+            <div class="row">
+                <div class="col-md-8 text-left">
+                    <button class="btn btn-primary shadow fw-bold text-success mb-2 text-start font-weight-bold btnn btnn-unclickable small-button">Clients</button>
+                    <p>
+                        <span style="font-size: 60px;" class="helvvbold">Who has<span style="font-size: 60px;" class="helvvbold gradient-textt"> choosen</span> us? </span>
+                    </p>
+                </div>
+            </div>
+    
+            <!-- Unique Carousel -->
+            <div id="uniqueCarousel" >
+                <div class="carousel-inner">
+                    <!-- First slide -->
+                    <div class="carousel-item active">
+                        <div class="item rounded-border-gradientt">
+                            <div class="shadow-effect">
+                                <img class="img-responsive rounded-top-cornerss" src="./assets/img/1.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Second slide -->
+                    <div class="carousel-item active">
+                        <div class="item rounded-border-gradientt">
+                            <div class="shadow-effect">
+                                <img class="img-responsive rounded-top-cornerss" src="./assets/img/2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Third slide -->
+                    <div class="carousel-item active">
+                        <div class="item rounded-border-gradientt">
+                            <div class="shadow-effect">
+                                <img class="img-responsive rounded-top-cornerss" src="./assets/img/3.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="bg-black" style="height: 50px;"></div>
+    
+    
     <section class="portfolio-block projects-cards bg-black">
         <div class="container">
             <!-- Start: portfolio heading -->
@@ -450,7 +519,7 @@ a.d-flex.align-items-center.text-decoration-none {
                 <div class="col-md-8 col-xl-6 text-left">
                     <button class="btn btn-primary shadow fw-bold text-success mb-2 text-start font-weight-bold btnn btnn-unclickable">Blogs</button>
                     <p>
-                        <span style="font-size: 60px;" class="helvvbold">Boostify<span style="font-size: 60px;" class=" helvvbold gradient-textt"> Blog</span> Zone</span>
+                        <span style="font-size: 60px;" class="helvvbold">Boostify<span style="font-size: 60px;" class="helvvbold gradient-textt"> Blog</span> Zone</span>
                     </p>
                 </div>
             </div>
@@ -462,14 +531,33 @@ a.d-flex.align-items-center.text-decoration-none {
                     <div class="carousel-item active">
                         <div class="row">
                             <div class="col-md-6 col-lg-4">
-                                <div class="item">
+                                <div class="item rounded-border-gradient">
                                     <div class="shadow-effect">
-                                        <img class="img-responsive" src="./assets/img/IMG_9028.JPG" alt="">
+                                        <img class="img-responsive rounded-top-corners" src="./assets/img/IMG_9028.JPG" alt="">
                                         <img class="overlay-image" src="./assets/img/IMG_6385.PNG" alt="Overlay Image">
                                         <div class="item-details">
-                                            <p>Generative AI offers very real benefits for marketers, and here’s what I learned from our data: Generative AI improves the quality of content they create.
-                                            Most marketers say that the content they make with generative AI performs somewhat better …</p><br>
-                                            <button class="btn btn-primary shadow ffont font-weight-bold gradient-btn flexible-btn" type="button">                                    
+                                            <h5 class="text-title">Using TikTok for Business</h5>
+                                            <p>Learning how to use TikTok for business can level up your marketing strategy. The platform is home to over 1.5 billion users of all ages. But surprisingly, only 26% of marketers are currently using TikTok. Considering the massive user base and engagement …</p><br>
+                                            <button class="btn btn-primary shadow ffont font-weight-bold gradient-btn flexible-btn" type="button">
+                                                <a class="d-flex align-items-center text-decoration-none" style="color: white;">
+                                                    <span>Learn more</span>
+                                                    <img src="./assets/img/IMG_8619.PNG" alt="Description of the image" style="width: 20px; height: 20px; margin-left: 8px;">
+                                                </a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-md-6 col-lg-4">
+                                <div class="item rounded-border-gradient">
+                                    <div class="shadow-effect">
+                                        <img class="img-responsive rounded-top-corners" src="./assets/img/IMG_9029.JPG" alt="">
+                                        <img class="overlay-image" src="./assets/img/IMG_6385.PNG" alt="Overlay Image">
+                                        <div class="item-details">
+                                            <h5 class="text-title">Generative Ai in Marketing</h5>
+                                            <p>Generative AI offers very real benefits for marketers, and here’s what I learned from our data: Generative AI improves the quality of content they create. Most marketers say that the content they make with generative AI performs somewhat better …</p><br>
+                                            <button class="btn btn-primary shadow ffont font-weight-bold gradient-btn flexible-btn" type="button">
                                                 <a class="d-flex align-items-center text-decoration-none" style="color: white;">
                                                     <span>Learn more</span>
                                                     <img src="./assets/img/IMG_8619.PNG" alt="Description of the image" style="width: 20px; height: 20px; margin-left: 8px;">
@@ -483,29 +571,10 @@ a.d-flex.align-items-center.text-decoration-none {
                             <div class="col-md-6 col-lg-4">
                                 <div class="item">
                                     <div class="shadow-effect">
-                                        <img class="img-responsive" src="./assets/img/IMG_9029.JPG" alt="">
-                                        <img class="overlay-image" src="./assets/img/IMG_6385.PNG" alt="Overlay Image">
-                                        <div class="item-details">
-                                            <p>Generative AI offers very real benefits for marketers, and here’s what I learned from our data: Generative AI improves the quality of content they create.
-                                            Most marketers say that the content they make with generative AI performs somewhat better …</p><br>
-                                            <button class="btn btn-primary shadow ffont font-weight-bold gradient-btn flexible-btn" type="button">                                    
-                                                <a class="d-flex align-items-center text-decoration-none" style="color: white;">
-                                                    <span>Learn more</span>
-                                                    <img src="./assets/img/IMG_8619.PNG" alt="Description of the image" style="width: 20px; height: 20px; margin-left: 8px;">
-                                                </a>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 col-lg-4">
-                                <div class="item">
-                                    <div class="shadow-effect">
                                         <img class="img-responsive" src="./assets/img/IMG_6385.PNG" alt="">
                                         <img class="overlay-image" src="./assets/img/IMG_6385.PNG" alt="Overlay Image">
                                         <div class="item-details">
-                                            <p>Stay tuned</p><br>
+                                            <p><br><br><br>Stay tuned</p><br>
                                         </div>
                                     </div>
                                 </div>
@@ -513,18 +582,37 @@ a.d-flex.align-items-center.text-decoration-none {
                         </div>
                     </div>
     
-                    <!-- Second slide -->
+                    <!-- Second slide
                     <div class="carousel-item">
                         <div class="row">
                             <div class="col-md-6 col-lg-4">
-                                <div class="item">
+                                <div class="item rounded-border-gradient">
                                     <div class="shadow-effect">
-                                        <img class="img-responsive" src="./assets/img/IMG_9028.JPG" alt="">
+                                        <img class="img-responsive rounded-top-corners" src="./assets/img/IMG_9028.JPG" alt="">
                                         <img class="overlay-image" src="./assets/img/IMG_6385.PNG" alt="Overlay Image">
                                         <div class="item-details">
-                                            <p>Generative AI offers very real benefits for marketers, and here’s what I learned from our data: Generative AI improves the quality of content they create.
-                                            Most marketers say that the content they make with generative AI performs somewhat better …</p><br>
-                                            <button class="btn btn-primary shadow ffont font-weight-bold gradient-btn flexible-btn" type="button">                                    
+                                            <h5 class="text-title">Using TikTok for Business</h5>
+                                            <p>Learning how to use TikTok for business can level up your marketing strategy. The platform is home to over 1.5 billion users of all ages. But surprisingly, only 26% of marketers are currently using TikTok. Considering the massive user base and engagement …</p><br>
+                                            <button class="btn btn-primary shadow ffont font-weight-bold gradient-btn flexible-btn" type="button">
+                                                <a class="d-flex align-items-center text-decoration-none" style="color: white;">
+                                                    <span>Learn more</span>
+                                                    <img src="./assets/img/IMG_8619.PNG" alt="Description of the image" style="width: 20px; height: 20px; margin-left: 8px;">
+                                                </a>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="col-md-6 col-lg-4">
+                                <div class="item rounded-border-gradient">
+                                    <div class="shadow-effect">
+                                        <img class="img-responsive rounded-top-corners" src="./assets/img/IMG_9029.JPG" alt="">
+                                        <img class="overlay-image" src="./assets/img/IMG_6385.PNG" alt="Overlay Image">
+                                        <div class="item-details">
+                                            <h5 class="text-title">Generative Ai in Marketing</h5>
+                                            <p>Generative AI offers very real benefits for marketers, and here’s what I learned from our data: Generative AI improves the quality of content they create. Most marketers say that the content they make with generative AI performs somewhat better …</p><br>
+                                            <button class="btn btn-primary shadow ffont font-weight-bold gradient-btn flexible-btn" type="button">
                                                 <a class="d-flex align-items-center text-decoration-none" style="color: white;">
                                                     <span>Learn more</span>
                                                     <img src="./assets/img/IMG_8619.PNG" alt="Description of the image" style="width: 20px; height: 20px; margin-left: 8px;">
@@ -538,25 +626,6 @@ a.d-flex.align-items-center.text-decoration-none {
                             <div class="col-md-6 col-lg-4">
                                 <div class="item">
                                     <div class="shadow-effect">
-                                        <img class="img-responsive" src="./assets/img/IMG_9029.JPG" alt="">
-                                        <img class="overlay-image" src="./assets/img/IMG_6385.PNG" alt="Overlay Image">
-                                        <div class="item-details">
-                                            <p>Generative AI offers very real benefits for marketers, and here’s what I learned from our data: Generative AI improves the quality of content they create.
-                                            Most marketers say that the content they make with generative AI performs somewhat better …</p><br>
-                                            <button class="btn btn-primary shadow ffont font-weight-bold gradient-btn flexible-btn" type="button">                                    
-                                                <a class="d-flex align-items-center text-decoration-none" style="color: white;">
-                                                    <span>Learn more</span>
-                                                    <img src="./assets/img/IMG_8619.PNG" alt="Description of the image" style="width: 20px; height: 20px; margin-left: 8px;">
-                                                </a>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-6 col-lg-4">
-                                <div class="item">
-                                    <div class="shadow-effect">
                                         <img class="img-responsive" src="./assets/img/IMG_6385.PNG" alt="">
                                         <img class="overlay-image" src="./assets/img/IMG_6385.PNG" alt="Overlay Image">
                                         <div class="item-details">
@@ -565,10 +634,9 @@ a.d-flex.align-items-center.text-decoration-none {
                                     </div>
                                 </div>
                             </div>
-                            <!-- Add additional slides as needed -->
                         </div>
                     </div>
-                </div>
+                </div>  -->
     
                 <!-- Carousel controls -->
                 <button class="carousel-control-prev" type="button" data-bs-target="#blogCarousel" data-bs-slide="prev">
@@ -602,7 +670,6 @@ a.d-flex.align-items-center.text-decoration-none {
             </div>
         </div>
     </section>
-    
     
     
 
@@ -675,7 +742,30 @@ a.d-flex.align-items-center.text-decoration-none {
 
 <!-- Include jQuery -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<!-- Include Owl Carousel -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const carouselInner = document.querySelector('#uniqueCarousel .carousel-inner');
+    const items = document.querySelectorAll('#uniqueCarousel .carousel-item');
+    let currentIndex = 0;
+
+    function rotateCarousel() {
+        items.forEach((item, index) => {
+            item.style.transform = `translateX(${(index - currentIndex) * 100}%) scale(${index === currentIndex ? 1 : 0.8})`;
+            item.style.opacity = index === currentIndex ? 1 : 0.5;
+        });
+    }
+
+    setInterval(() => {
+        currentIndex = (currentIndex + 1) % items.length;
+        rotateCarousel();
+    }, 3000); // Adjust the interval as needed
+
+    rotateCarousel(); // Initial call to set positions
+});
+</script>
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
@@ -693,6 +783,7 @@ a.d-flex.align-items-center.text-decoration-none {
         });
     });
 </script>
+
 </body>
 
 </html>

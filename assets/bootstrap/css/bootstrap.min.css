@@ -14769,7 +14769,7 @@ body {
 
 .shadow-effect {
     position: relative; /* Ensure the container is positioned relative for absolute positioning of children */
-    background: #fff; /* Ensure background color is white */
+    background: black; /* Ensure background color is white */
     border-radius: 10px; /* Add rounded corners */
     text-align: center;
     overflow: hidden;
@@ -14784,25 +14784,23 @@ body {
 
 .overlay-image {
     position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -25%); /* Center the image horizontally and adjust vertically */
+    top: 28%;
+    left: 0%;
     width: 100%;
     height: auto;
-
     z-index: 1; /* Ensure the overlay image is above the background image */
 }
 
 .item-details {
-    padding: 20px;
+
     color: white; /* Change text color to white */
     position: relative;
-    bottom: 0; /* Position the text at the bottom */
-    left: 0;
+    left: 0%;
     right: 0;
+	top: 20%;
     z-index: 2; /* Ensure the text is above the overlay image */
-    background:black;
-    text-align: center;
+    border-radius: 15px; /* Ensure inner content also has rounded corners */
+    text-align: left;
 }
 
 .explore-btn {
@@ -14818,5 +14816,109 @@ body {
     color: black; /* Change text color to black */
 }
 
+.text-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+	top: 28%;
+}
 
 
+.rounded-border-gradient {
+    border-radius: 15px; /* Rounded corners */
+    padding: 1px; /* Space for the gradient border */
+    background: linear-gradient(45deg, #ff6b6b, #f06595, #cc5de8, #845ef7, #5c7cfa, #339af0, #22b8cf, #20c997, #51cf66, #94d82d, #fcc419, #ff922b);
+    background-size: 200% 200%;
+    animation: gradient-animation 5s ease infinite;
+}
+
+.rounded-border-gradientt {
+    border-radius: 15px; /* Rounded corners */
+    padding: 1px; /* Space for the gradient border */
+    background: linear-gradient(45deg, #ff6b6b, #f06595, #cc5de8, #845ef7, #5c7cfa, #339af0, #22b8cf, #20c997, #51cf66, #94d82d, #fcc419, #ff922b);
+    background-size: 200% 200%;
+    animation: gradient-animation 5s ease infinite;
+}
+
+.rounded-border-gradientt .shadow-effect {
+    border-radius: 15px; /* Ensure inner content also has rounded corners */
+
+    padding: 5px; /* Padding for the card content */
+}
+
+.rounded-border-gradient .shadow-effect {
+    border-radius: 15px; /* Ensure inner content also has rounded corners */
+
+    padding: 5px; /* Padding for the card content */
+}
+
+@keyframes gradient-animation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.rounded-top-cornerss {
+    border-top-left-radius: 20px; /* Rounded top-left corner */
+    border-top-right-radius: 20px; /* Rounded top-right corner */
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+.rounded-top-corners {
+    border-top-left-radius: 15px; /* Rounded top-left corner */
+    border-top-right-radius: 15px; /* Rounded top-right corner */
+}
+
+/* Unique Carousel Styles */
+#uniqueCarousel.carousel-container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    perspective: 1000px;
+}
+
+#uniqueCarousel .carousel-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 300px; /* Adjust as needed */
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+#uniqueCarousel .carousel-item {
+    position: absolute;
+    width: 30%; /* Adjust as needed */
+    height: 100%;
+    transition: transform 1s, opacity 1s;
+}
+
+#uniqueCarousel .carousel-item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+#uniqueCarousel .carousel-item:nth-child(1) {
+    transform: translateX(-100%) scale(0.8);
+    opacity: 0.5;
+}
+
+#uniqueCarousel .carousel-item:nth-child(2) {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+}
+
+#uniqueCarousel .carousel-item:nth-child(3) {
+    transform: translateX(100%) scale(0.8);
+    opacity: 0.5;
+}
+
+
+  
+  
+
+  
