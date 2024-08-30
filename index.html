@@ -117,6 +117,19 @@
             /* Hover color */
         }
 
+
+        ::selection {
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
+    color: inherit; /* Keep the original text color */
+}
+
+/* For Firefox */
+::-moz-selection {
+    background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
+    color: inherit; /* Keep the original text color */
+}
+
+
         .btnn {
             background: #3E46FF;
             border: none;
@@ -180,8 +193,16 @@
                             style="color: white;">Services</a></li>
                     <li class="nav-item"><a class="nav-lin nav-lin-ltr nav-link" href="pricing.html"
                             style="color: white;">Pricing</a></li>
-                    <li class="nav-item"><a class="nav-lin nav-lin-ltr nav-link" href="resources.html"
-                            style="color: white;">Resources</a></li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-lin nav-lin-ltr nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;">
+                                    Resources
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
+                                    <li><a class="dropdown-item" href="resource1.html">Resource 1</a></li>
+                                    <li><a class="dropdown-item" href="resource2.html">Resource 2</a></li>
+                                    <li><a class="dropdown-item" href="resource3.html">Resource 3</a></li>
+                                </ul>
+                            </li>
                     <li class="nav-item"><a class="nav-lin nav-lin-ltr nav-link" href="contacts.html"
                             style="color: white;">Contacts</a></li>
                 </ul>
@@ -225,6 +246,9 @@
                         </div>
                     </div>
                 </div>
+                <div class="d-flex justify-content-center">
+                    <img class="rounded img-fluid w-100 fit-cover banner-image" style="min-height: 400px;" src="./assets/img/Vector.png" alt="Banner Image" width="800">
+                </div>
             </div>
         </div>
     </header>
@@ -249,13 +273,58 @@
                             <div class="d-flex flex-column align-items-start">
                                 <div class="bs-icon-lg d-flex justify-content-center align-items-center mb-3 bs-icon"
                                     style="top: 2rem; left: 2rem; position: absolute; background-color: #393939; border-radius: 25%;">
-                                    <img src="./assets/img/IMG_8608.PNG" alt="Description of the image"
-                                        class="small-image">
+                                    <img src="./assets/img/IMG_8610.PNG" alt="Description of the image" class="small-image">
                                 </div>
-                                <h5 class="fw-bold card-title text-start" style="margin-top: 4rem;">SEO</h5>
+                                <h5 class="fw-bold card-title text-start" style="margin-top: 4rem;">Content Creation</h5>
                                 <p class="text-muted card-text mb-4 text-start">We will improve your online visibility
                                     by optimizing your website, so it reaches the top results.</p>
-                                <a href="https://example.com" class="d-flex align-items-center text-decoration-none"
+                                <a href="./services.html#content-creation" class="d-flex align-items-center text-decoration-none"
+                                    style="align-self: flex-end; color: white;">
+                                    <span>Learn more</span>
+                                    <img src="./assets/img/IMG_8619.PNG" alt="Description of the image"
+                                        style="width: 20px; height: 20px; margin-left: 8px;">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm bg-dark card-hover">
+                        <div class="card-body px-4 py-5 px-md-5">
+                            <div class="d-flex flex-column align-items-start">
+                                <div class="bs-icon-lg d-flex justify-content-center align-items-center mb-3 bs-icon"
+                                    style="top: 2rem; left: 2rem; position: absolute; background-color: #393939; border-radius: 25%;">
+                                    <img src="./assets/img/IMG_8604.PNG" alt="Description of the image"
+                                        class="small-image">
+                                </div>
+                                <h5 class="fw-bold card-title text-start" style="margin-top: 4rem;">Growth Plan</h5>
+                                <p class="text-muted card-text mb-4 text-start">We will improve your online visibility
+                                    by optimizing your website, so it reaches the top results.</p>
+                                    <a href="services.html#growth-plan" class="d-flex align-items-center text-decoration-none"
+                                    style="align-self: flex-end; color: white;">
+                                    <span>Learn more</span>
+                                    <img src="./assets/img/IMG_8619.PNG" alt="Description of the image"
+                                        style="width: 20px; height: 20px; margin-left: 8px;">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm bg-dark card-hover">
+                        <div class="card-body px-4 py-5 px-md-5">
+                            <div class="d-flex flex-column align-items-start">
+                                <div class="bs-icon-lg d-flex justify-content-center align-items-center mb-3 bs-icon"
+                                    style="top: 2rem; left: 2rem; position: absolute; background-color: #393939; border-radius: 25%;">
+                                    <img src="./assets/img/IMG_8609.PNG" alt="Description of the image"
+                                        class="small-image">
+                                </div>
+                                <h5 class="fw-bold card-title text-start" style="margin-top: 4rem;">Account Management</h5>
+                                <p class="text-muted card-text mb-4 text-start">We will improve your online visibility
+                                    by optimizing your website, so it reaches the top results.</p>
+                                    <a href="services.html#account-management" class="d-flex align-items-center text-decoration-none"
                                     style="align-self: flex-end; color: white;">
                                     <span>Learn more</span>
                                     <img src="./assets/img/IMG_8619.PNG" alt="Description of the image"
@@ -278,7 +347,7 @@
                                 <h5 class="fw-bold card-title text-start" style="margin-top: 4rem;">SEO</h5>
                                 <p class="text-muted card-text mb-4 text-start">We will improve your online visibility
                                     by optimizing your website, so it reaches the top results.</p>
-                                <a href="https://example.com" class="d-flex align-items-center text-decoration-none"
+                                    <a href="services.html#seo" class="d-flex align-items-center text-decoration-none"
                                     style="align-self: flex-end; color: white;">
                                     <span>Learn more</span>
                                     <img src="./assets/img/IMG_8619.PNG" alt="Description of the image"
@@ -295,13 +364,13 @@
                             <div class="d-flex flex-column align-items-start">
                                 <div class="bs-icon-lg d-flex justify-content-center align-items-center mb-3 bs-icon"
                                     style="top: 2rem; left: 2rem; position: absolute; background-color: #393939; border-radius: 25%;">
-                                    <img src="./assets/img/IMG_8608.PNG" alt="Description of the image"
+                                    <img src="./assets/img/IMG_8611.PNG" alt="Description of the image"
                                         class="small-image">
                                 </div>
-                                <h5 class="fw-bold card-title text-start" style="margin-top: 4rem;">SEO</h5>
+                                <h5 class="fw-bold card-title text-start" style="margin-top: 4rem;">Website Creation</h5>
                                 <p class="text-muted card-text mb-4 text-start">We will improve your online visibility
                                     by optimizing your website, so it reaches the top results.</p>
-                                <a href="https://example.com" class="d-flex align-items-center text-decoration-none"
+                                    <a href="services.html#website-creation" class="d-flex align-items-center text-decoration-none"
                                     style="align-self: flex-end; color: white;">
                                     <span>Learn more</span>
                                     <img src="./assets/img/IMG_8619.PNG" alt="Description of the image"
@@ -318,59 +387,13 @@
                             <div class="d-flex flex-column align-items-start">
                                 <div class="bs-icon-lg d-flex justify-content-center align-items-center mb-3 bs-icon"
                                     style="top: 2rem; left: 2rem; position: absolute; background-color: #393939; border-radius: 25%;">
-                                    <img src="./assets/img/IMG_8608.PNG" alt="Description of the image"
+                                    <img src="./assets/img/IMG_8612.PNG" alt="Description of the image"
                                         class="small-image">
                                 </div>
-                                <h5 class="fw-bold card-title text-start" style="margin-top: 4rem;">SEO</h5>
+                                <h5 class="fw-bold card-title text-start" style="margin-top: 4rem;">Even More</h5>
                                 <p class="text-muted card-text mb-4 text-start">We will improve your online visibility
                                     by optimizing your website, so it reaches the top results.</p>
-                                <a href="https://example.com" class="d-flex align-items-center text-decoration-none"
-                                    style="align-self: flex-end; color: white;">
-                                    <span>Learn more</span>
-                                    <img src="./assets/img/IMG_8619.PNG" alt="Description of the image"
-                                        style="width: 20px; height: 20px; margin-left: 8px;">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="card border-0 shadow-sm bg-dark card-hover">
-                        <div class="card-body px-4 py-5 px-md-5">
-                            <div class="d-flex flex-column align-items-start">
-                                <div class="bs-icon-lg d-flex justify-content-center align-items-center mb-3 bs-icon"
-                                    style="top: 2rem; left: 2rem; position: absolute; background-color: #393939; border-radius: 25%;">
-                                    <img src="./assets/img/IMG_8608.PNG" alt="Description of the image"
-                                        class="small-image">
-                                </div>
-                                <h5 class="fw-bold card-title text-start" style="margin-top: 4rem;">SEO</h5>
-                                <p class="text-muted card-text mb-4 text-start">We will improve your online visibility
-                                    by optimizing your website, so it reaches the top results.</p>
-                                <a href="https://example.com" class="d-flex align-items-center text-decoration-none"
-                                    style="align-self: flex-end; color: white;">
-                                    <span>Learn more</span>
-                                    <img src="./assets/img/IMG_8619.PNG" alt="Description of the image"
-                                        style="width: 20px; height: 20px; margin-left: 8px;">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="card border-0 shadow-sm bg-dark card-hover">
-                        <div class="card-body px-4 py-5 px-md-5">
-                            <div class="d-flex flex-column align-items-start">
-                                <div class="bs-icon-lg d-flex justify-content-center align-items-center mb-3 bs-icon"
-                                    style="top: 2rem; left: 2rem; position: absolute; background-color: #393939; border-radius: 25%;">
-                                    <img src="./assets/img/IMG_8608.PNG" alt="Description of the image"
-                                        class="small-image">
-                                </div>
-                                <h5 class="fw-bold card-title text-start" style="margin-top: 4rem;">SEO</h5>
-                                <p class="text-muted card-text mb-4 text-start">We will improve your online visibility
-                                    by optimizing your website, so it reaches the top results.</p>
-                                <a href="https://example.com" class="d-flex align-items-center text-decoration-none"
+                                    <a href="services.html#more" class="d-flex align-items-center text-decoration-none"
                                     style="align-self: flex-end; color: white;">
                                     <span>Learn more</span>
                                     <img src="./assets/img/IMG_8619.PNG" alt="Description of the image"
@@ -454,7 +477,7 @@
                             <div class="d-flex flex-column align-items-start">
                                 <div class="bs-icon-lg d-flex justify-content-center align-items-center mb-3 bs-icon"
                                     style="top: 2rem; left: 2rem; position: absolute; background-color: #393939; border-radius: 25%;">
-                                    <img src="./assets/img/IMG_8608.PNG" alt="Description of the image"
+                                    <img src="./assets/img/money.png" alt="Description of the image"
                                         class="small-image">
                                 </div>
                                 <h5 class="fw-bold card-title text-start" style="margin-top: 4rem;">Affordable</h5>
@@ -471,7 +494,7 @@
                             <div class="d-flex flex-column align-items-start">
                                 <div class="bs-icon-lg d-flex justify-content-center align-items-center mb-3 bs-icon"
                                     style="top: 2rem; left: 2rem; position: absolute; background-color: #393939; border-radius: 25%;">
-                                    <img src="./assets/img/IMG_8608.PNG" alt="Description of the image"
+                                    <img src="./assets/img/solution.png" alt="Description of the image"
                                         class="small-image">
                                 </div>
                                 <h5 class="fw-bold card-title text-start" style="margin-top: 4rem;">Tailored Solutions
@@ -489,7 +512,7 @@
                             <div class="d-flex flex-column align-items-start">
                                 <div class="bs-icon-lg d-flex justify-content-center align-items-center mb-3 bs-icon"
                                     style="top: 2rem; left: 2rem; position: absolute; background-color: #393939; border-radius: 25%;">
-                                    <img src="./assets/img/IMG_8608.PNG" alt="Description of the image"
+                                    <img src="./assets/img/collective.png" alt="Description of the image"
                                         class="small-image">
                                 </div>
                                 <h5 class="fw-bold card-title text-start" style="margin-top: 4rem;">Meaningful Impact
@@ -507,7 +530,7 @@
                             <div class="d-flex flex-column align-items-start">
                                 <div class="bs-icon-lg d-flex justify-content-center align-items-center mb-3 bs-icon"
                                     style="top: 2rem; left: 2rem; position: absolute; background-color: #393939; border-radius: 25%;">
-                                    <img src="./assets/img/IMG_8608.PNG" alt="Description of the image"
+                                    <img src="./assets/img/goal.png" alt="Description of the image"
                                         class="small-image">
                                 </div>
                                 <h5 class="fw-bold card-title text-start" style="margin-top: 4rem;">Result That Lasts
@@ -525,7 +548,7 @@
                             <div class="d-flex flex-column align-items-start">
                                 <div class="bs-icon-lg d-flex justify-content-center align-items-center mb-3 bs-icon"
                                     style="top: 2rem; left: 2rem; position: absolute; background-color: #393939; border-radius: 25%;">
-                                    <img src="./assets/img/IMG_8608.PNG" alt="Description of the image"
+                                    <img src="./assets/img/service.png" alt="Description of the image"
                                         class="small-image">
                                 </div>
                                 <h5 class="fw-bold card-title text-start" style="margin-top: 4rem;">Dedicated Support
@@ -543,7 +566,7 @@
                             <div class="d-flex flex-column align-items-start">
                                 <div class="bs-icon-lg d-flex justify-content-center align-items-center mb-3 bs-icon"
                                     style="top: 2rem; left: 2rem; position: absolute; background-color: #393939; border-radius: 25%;">
-                                    <img src="./assets/img/IMG_8608.PNG" alt="Description of the image"
+                                    <img src="./assets/img/innovation.png" alt="Description of the image"
                                         class="small-image">
                                 </div>
                                 <h5 class="fw-bold card-title text-start" style="margin-top: 4rem;">Innovation Meets
@@ -558,52 +581,37 @@
         </div>
     </section>
 
-    <section class="bg-black">
-        <div class="container bg-black">
-            <div class="row">
-                <div class="col-md-8 text-left">
-                    <button
-                        class="btn btn-primary shadow fw-bold text-success mb-2 text-start font-weight-bold btnn btnn-unclickable small-button">Clients</button>
+    <section class="portfolio-block projects-cards bg-black">
+        <div class="container">
+            <!-- Start: portfolio heading -->
+            <div class="row gy-4 gy-md-0 heading">
+                <div class="col-md-8 col-xl-6 text-left">
+                    <button class="btn btn-primary shadow fw-bold text-success mb-2 text-start font-weight-bold btnn btnn-unclickable small-button">Clients</button>
                     <p>
-                        <span style="font-size: 60px;" class="helvvbold">Who has<span style="font-size: 60px;"
-                                class="helvvbold gradient-textt"> choosen</span> us? </span>
-                    </p>
+                        <span style="font-size: 60px;" class="helvvbold">Who has<span style="font-size: 60px;" class="helvvbold gradient-textt"> choosen</span> us? </span>
+                    </p><br>
                 </div>
             </div>
-
-            <!-- Unique Carousel -->
-            <div id="uniqueCarousel">
-                <div class="carousel-inner">
-                    <!-- First slide -->
-                    <div class="carousel-item active">
-                        <div class="item rounded-border-gradientt">
-                            <div class="shadow-effect">
-                                <img class="img-responsive rounded-top-cornerss" src="./assets/img/1.png" alt="">
-                            </div>
-                        </div>
+            <div class="owl-carousel owl-theme mt-5">
+                <div class="owl-item">
+                    <div class="card rounded-top-corners">
+                        <img src="./assets/img/1.png" alt="">
                     </div>
-
-                    <!-- Second slide -->
-                    <div class="carousel-item active">
-                        <div class="item rounded-border-gradientt">
-                            <div class="shadow-effect">
-                                <img class="img-responsive rounded-top-cornerss" src="./assets/img/2.png" alt="">
-                            </div>
-                        </div>
+                </div>
+                <div class="owl-item">
+                    <div class="card rounded-top-corners">
+                        <img src="./assets/img/2.png" alt="">
                     </div>
-
-                    <!-- Third slide -->
-                    <div class="carousel-item active">
-                        <div class="item rounded-border-gradientt">
-                            <div class="shadow-effect">
-                                <img class="img-responsive rounded-top-cornerss" src="./assets/img/3.png" alt="">
-                            </div>
-                        </div>
+                </div>
+                <div class="owl-item">
+                    <div class="card rounded-top-corners">
+                        <img src="./assets/img/3.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
 
     <div class="bg-black" style="height: 50px;"></div>
 
@@ -877,27 +885,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const carouselInner = document.querySelector('#uniqueCarousel .carousel-inner');
-            const items = document.querySelectorAll('#uniqueCarousel .carousel-item');
-            let currentIndex = 0;
-
-            function rotateCarousel() {
-                items.forEach((item, index) => {
-                    item.style.transform = `translateX(${(index - currentIndex) * 100}%) scale(${index === currentIndex ? 1 : 0.8})`;
-                    item.style.opacity = index === currentIndex ? 1 : 0.5;
-                });
-            }
-
-            setInterval(() => {
-                currentIndex = (currentIndex + 1) % items.length;
-                rotateCarousel();
-            }, 3000); // Adjust the interval as needed
-
-            rotateCarousel(); // Initial call to set positions
-        });
-    </script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
@@ -916,6 +903,33 @@
             });
         });
     </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
+<script>
+    $(document).ready(function () {
+        var silder = $(".owl-carousel");
+        silder.owlCarousel({
+            autoplay: true,
+            autoplayTimeout: 3000, // Adjust the timeout as needed
+            autoplayHoverPause: false,
+            items: 1,
+            stagePadding: 20,
+            center: true,
+            nav: true, // Enable navigation
+            navText: ["<button class='nav-btn prev-slide'>‹</button>", "<button class='nav-btn next-slide'>›</button>"], // Custom buttons
+            dots: true,
+            loop: true,
+            responsive: {
+                0: { items: 1 },
+                480: { items: 2 },
+                575: { items: 2 },
+                768: { items: 2 },
+                991: { items: 3 },
+                1200: { items: 4 }
+            }
+        });
+    });
+</script>
 
 </body>
 

@@ -15116,8 +15116,115 @@ a.d-flex.align-items-center.text-decoration-none {
 
 
 
+
+
+	
+
+
+
+
 		
 
   
 
-  
+
+	@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+	:root {
+	  --black: #130f0d;
+	  --primary: #fd951f;
+	  --white: #f0f0f9;
+	}
+	
+
+	*,
+	button,
+	input {
+	  font-family: Arial, Helvetica, sans-serif, sans-serif;
+	}
+	
+	.tab-links {
+	  margin-bottom: 32px;
+	}
+	
+	.tab-button {
+	  position: relative;
+	  padding: 16px;
+	  border: none;
+	  outline: none;
+	  color: var(--white);
+	  font-size: 12px;
+	  text-transform: uppercase;
+	  background: transparent;
+	  cursor: pointer;
+	  margin-right: 8px; /* Add some spacing between buttons */
+	}
+	
+	.tab-button::after {
+	  content: "";
+	  position: absolute;
+	  bottom: 0;
+	  left: 0;
+	  width: 0%;
+	  height: 2px;
+	  background-color: var(--primary);
+	  transition: .4s;
+	}
+	
+	.tab-button:hover::after,
+	.tab-button.active::after {
+	  width: 100%;
+	}
+	
+	.tab-content > section {
+	  animation: up 1s;
+	}
+	
+	@keyframes up {
+	  from {
+		opacity: 0;
+		transform: translateY(15px);
+	  }
+	  
+	  to {
+		opacity: 1;
+	  }
+	}
+ 
+	
+	.nav-btn {
+		background-color: #fff; /* Button background color */
+		border: none; /* Remove border */
+		color: #000; /* Button text color */
+		font-size: 24px; /* Button text size */
+		cursor: pointer; /* Pointer cursor on hover */
+		padding: 10px; /* Button padding */
+		position: absolute; /* Position buttons absolutely */
+		top: 50%; /* Center vertically */
+		transform: translateY(-50%); /* Adjust for vertical centering */
+		z-index: 1000; /* Ensure buttons are above other elements */
+	}
+	
+	.prev-slide {
+		left: 10px; /* Position the left button */
+	}
+	
+	.next-slide {
+		right: 10px; /* Position the right button */
+	}
+
+
+	.full-size-image-container {
+    background-color: black; /* Set background color to black */
+    width: 200%; /* Full width */
+    height: 100vh; /* Full viewport height */
+    display: flex; /* Use flexbox to center the image */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+.full-size-image {
+    max-width: 100%; /* Ensure the image does not exceed the container width */
+    max-height: 100%; /* Ensure the image does not exceed the container height */
+    object-fit: cover; /* Cover the container while maintaining aspect ratio */
+}
